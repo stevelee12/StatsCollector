@@ -16,4 +16,4 @@ Now Run the following commands to get MSSQL setup and running:
   * Need to handle mapping of input to output better. input/ouput model naming? Automapper?
   * No localisation or timezones
   * Better way to handle the injection of config for connection strings?
-  * [Swagger UrL: http://localhost:52620/swagger/index.html] (http://localhost:52620/swagger/index.html)
+  * Swagger UrL: http://localhost:52620/swagger/index.html]
