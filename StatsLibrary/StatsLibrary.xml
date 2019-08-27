@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StatsLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:StatsLibrary.BusinessLogic.ReadingProcessor">
+            <summary>
+            Middle layer to de-couple DB activity from front end. This class is called by the Controller
+            </summary>
+        </member>
+        <member name="M:StatsLibrary.BusinessLogic.ReadingProcessor.CreateReading(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            Save new reading
+            </summary>
+            <param name="config"></param>
+            <param name="deviceId"></param>
+            <param name="metricId"></param>
+            <param name="readingValue"></param>
+            <param name="readingDateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StatsLibrary.BusinessLogic.ReadingProcessor.LoadAllReadings(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Load all readings. Debug only, should never make it to Production!
+            </summary>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StatsLibrary.BusinessLogic.ReadingProcessor.LoadReading(Microsoft.Extensions.Configuration.IConfiguration,System.Int32)">
+            <summary>
+            Load 1 reading. Debug only, should never make it to Production!
+            </summary>
+            <param name="config"></param>
+            <param name="readingId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:StatsLibrary.DataAccess.SqlDataAccess">
+            <summary>
+            Static class used to store data into a SQL Database. Config is passed to each method to specify where data is saved
+            </summary>
+        </member>
+        <member name="M:StatsLibrary.DataAccess.SqlDataAccess.GetConnectionString(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Allows 1 unique place to put the hardcoded connection name rather than in each of load/save data methods
+            </summary>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StatsLibrary.DataAccess.SqlDataAccess.LoadData``1(Microsoft.Extensions.Configuration.IConfiguration,System.String)">
+            <summary>
+            Retrieve data from the DB, maps to a List of Type T passed when calling the method
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="config"></param>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StatsLibrary.DataAccess.SqlDataAccess.SaveData``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,``0)">
+            <summary>
+            Persist data into the DB by passing the sql command and Type T
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="config"></param>
+            <param name="sql"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
