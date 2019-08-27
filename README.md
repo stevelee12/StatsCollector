@@ -19,3 +19,4 @@ Finally run the project using the StatsApi as the startup project
   * No localisation or timezones
   * Better way to handle the injection of config for connection strings?
   * Swagger Url: http://localhost:52620/swagger/index.html
+  * Home Controller has no function but I've left it there as a template
