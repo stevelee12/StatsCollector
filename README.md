@@ -10,9 +10,6 @@ Run the following commands to get MSSQL setup and running:
   docker build -t sqlstatscollector .
   docker run -p 11433:1433 -d sqlstatscollector
 
-# TODO
-As this is demoware there is always plenty to do
-
 # Notes
   * No Security
   * Need to handle mapping of input to output better. input/ouput model naming? Automapper?
