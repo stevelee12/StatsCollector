@@ -6,9 +6,9 @@ On a Windows machine running docker create the folder structure C:\Docker\sqlSta
   * dockerfile
   * StatsCollector.sql
 Run the following commands to get MSSQL setup and running:  
-  docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Pwd12345!" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest  
-  docker build -t sqlstatscollector .  
-  docker run -p 11433:1433 -d sqlstatscollector  
+  * docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Pwd12345!" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest  
+  * docker build -t sqlstatscollector .  
+  * docker run -p 11433:1433 -d sqlstatscollector  
 
 # Notes
   * No Security
