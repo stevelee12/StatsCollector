@@ -15,3 +15,4 @@ Now Run the following commands to get MSSQL setup and running:
   * No Security
   * Need to handle mapping of input to output better. input/ouput model naming? Automapper?
   * No localisation or timezones
+  * Better way to handle the injection of config for connection strings?
