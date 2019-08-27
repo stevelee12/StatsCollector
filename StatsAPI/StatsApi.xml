@@ -4,32 +4,6 @@
         <name>StatsApi</name>
     </assembly>
     <members>
-        <member name="M:StatsAPI.Controllers.ReadingController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
-            <summary>
-            Controller used to persist readings taken. Get and Get all used for Debug Only
-            </summary>
-            <param name="configuration"></param>
-        </member>
-        <member name="M:StatsAPI.Controllers.ReadingController.Get">
-            <summary>
-            Get all readings - Debug purposes only
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:StatsAPI.Controllers.ReadingController.Get(System.Int32)">
-            <summary>
-            Get by Id - Debug purposes only
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:StatsAPI.Controllers.ReadingController.Post(StatsApi.Models.ReadingModelInput)">
-            <summary>
-            Persist a recording to datastore
-            </summary>
-            <param name="data"></param>
-            <returns></returns>
-        </member>
         <member name="T:StatsApi.Models.ReadingModelInput">
             <summary>
             This class is used to accept input via the API and turn it into a ReadingModel for the datastore
@@ -55,6 +29,32 @@
             <summary>
             This is the datetime the recording was taken
             </summary>
+        </member>
+        <member name="M:StatsAPI.Controllers.ReadingController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Controller used to persist readings taken. Get and Get all used for Debug Only
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:StatsAPI.Controllers.ReadingController.Get">
+            <summary>
+            Get all readings - Debug purposes only
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StatsAPI.Controllers.ReadingController.Get(System.Int32)">
+            <summary>
+            Get by Id - Debug purposes only
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StatsAPI.Controllers.ReadingController.Post(StatsApi.Models.ReadingModelInput)">
+            <summary>
+            Persist a recording to datastore
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>

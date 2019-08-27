@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using StatsApi.Models;
 
-namespace WebApplication4.Controllers
+namespace StatsApi.Controllers
 {
     public class HomeController : Controller
     {
