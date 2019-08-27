@@ -15,7 +15,7 @@ Finally run the project using the StatsApi as the startup project
 
 # Notes
   * No Security
-  * Need to handle mapping of input to output better. input/ouput model naming? Automapper?
+  * Need to handle class mapping of input to output better. Input/ouput model naming? Automapper?
   * No localisation or timezones
   * Better way to handle the injection of config for connection strings?
   * Swagger Url: http://localhost:52620/swagger/index.html
